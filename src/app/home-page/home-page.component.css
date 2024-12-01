@@ -1,0 +1,292 @@
+a {
+  text-decoration: none;
+}
+
+.title {
+  color: #404742;
+  font-size: 45px;
+  font-weight: bold;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.title-2 {
+  color: #292836;
+  font-size: 26px;
+  font-weight: bold;
+  position: relative;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+ul li {
+  list-style: none;
+}
+
+.btnSumbit {
+  border: 1px solid #1fa84f;
+  background: #1fa84f;
+  color: #f8f6f4;
+  font-weight: 800;
+  border-radius: 40px;
+  padding: 8px 25px;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  outline: none;
+  font-weight: bold;
+  transition: 0.8s all ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btnSumbit::before {
+  background: #eff0ef;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btnSumbit:hover::before {
+  height: 380%;
+}
+
+.btnSumbit:hover {
+  color: #5e5e5e;
+}
+
+.alert {
+  --bs-alert-padding-y: 5px;
+  margin-top: 8px;
+}
+
+.navbar {
+  background-color: #f8f6f4 !important;
+  box-shadow: 5px 5px 15px 0 rgba(31, 31, 31, 0.07);
+  z-index: 99999;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #5e5e5e;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #1fa84f !important;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show > .navbar-light .navbar-nav .nav-link {
+  color: #1fa84f !important;
+}
+.navbar .nav-icon {
+  color: #000;
+  transition: color 0.3s;
+}
+.navbar .nav-icon:hover {
+  color: #1fa84f;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar .fa-bars {
+  color: #000;
+  transition: color 0.5s;
+}
+.navbar .fa-bars:hover {
+  color: #1fa84f;
+}
+
+.homePage {
+  background-color: #f8f6f4;
+  padding-top: 100px;
+  font-family: "Outfit", sans-serif;
+}
+
+.hero {
+  height: calc(100vh - 80px);
+}
+.hero .uniqueWord {
+  color: #1fa84f;
+}
+.hero h2 {
+  line-height: 65px;
+  font-size: 52px;
+  font-weight: bold;
+}
+.hero img {
+  width: 85%;
+  animation: smoothBounce 3s infinite cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+@keyframes smoothBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/*******Start About**********/
+.about {
+  margin-bottom: 5px;
+}
+.about .hover_img:hover .img1 {
+  z-index: 5;
+  top: 30px;
+  left: 90px;
+}
+.about .hover_img:hover .img2 {
+  right: 50px;
+  opacity: 0.5;
+}
+.about .img1 {
+  left: 60px;
+  top: 0px;
+  z-index: 9999999999;
+}
+.about .img2 {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  left: 70px;
+  transition: all 0.5s ease-in-out;
+}
+
+/*******End About**********/
+/***********Start Rewiews**************/
+.reviews {
+  width: 80%;
+  margin: auto;
+}
+.reviews .review-content {
+  background-color: #eff0ef;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.reviews .review-content P {
+  padding-top: 8px;
+}
+.reviews .review-content h2 {
+  font-style: normal;
+  line-height: 1.2;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: 20px;
+  color: #232323;
+  margin-top: 10px;
+}
+.reviews .review-content h6 {
+  font-weight: bold;
+  color: #1fa84f;
+}
+.reviews .review-content:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*************End Reviews*******************/
+/************* Contact ******************/
+.contact h6 {
+  color: #1fa84f;
+  font-weight: bold;
+}
+.contact h2 {
+  font-weight: bold;
+}
+.contact i {
+  color: #1fa84f;
+  font-size: 28px;
+}
+.contact ul {
+  padding: 0;
+  margin: 0;
+}
+.contact h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: #eff0ef;
+  color: #292836;
+}
+
+/*End Section Contact*/
+/*////////////////////////////////////////////////////*/
+/*Start Section Footer*/
+footer {
+  background-color: #1c1d1c;
+  padding: 20px;
+}
+footer h4 {
+  color: #b6b6b6;
+}
+footer .footerContact {
+  background-color: #202020;
+  border-radius: 5px;
+  padding: 10px;
+}
+footer .footerContact p {
+  color: #a2a1a1;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+footer ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #ddd;
+}
+footer ul li .fa-brands {
+  background-color: #1fa84f;
+  border-radius: 10px;
+  color: #eff0ef;
+  padding: 10px;
+  transition: all 0.3s;
+}
+footer ul li .fa-brands:hover {
+  background-color: #f8f6f4;
+  color: #000;
+}
+footer .CopyRight h6 {
+  color: #5e5e5e;
+}
+footer .uniqueWord {
+  color: #eff0ef;
+}
+footer hr {
+  color: #eff0ef;
+}
+
+/*End Section Footer*//*# sourceMappingURL=home-page.component.css.map */
